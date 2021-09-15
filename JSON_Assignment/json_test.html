@@ -1,0 +1,27 @@
+<p> This is the JSON assignment </p>
+
+<script>
+
+    const o1 = {x : 5, y : 9, z : 1};
+
+    console.log(o1.x);
+    console.log(o1.y);
+    console.log(o1.z);
+
+    const s1 = JSON.stringify(o1);
+
+    console.log(s1.x);
+    console.log(s1.y);
+    console.log(s1.z);
+    console.log(s1);
+
+    const s2 = '{"x": 3,"y": 4, "z" : 5 }';
+    const o2 = JSON.parse(s2);
+
+    console.log(s2);
+    console.log(o2.x);
+    console.log(o2.y);
+    console.log(o2.z);
+    console.log(o2);
+
+</script>
