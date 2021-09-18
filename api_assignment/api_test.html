@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> API Assignment</title>
+</head>
+
+<body>
+    <div id="sunrise"> </div>
+
+        <p> This is the API assignment</p>
+
+        <script>
+
+            fetch("https://api.sunrise-sunset.org/json?lat=34.1064&lng=-117.5931&formatted=0").then(response => response.json()).then(data => {
+                const sunriseTime = new Date(data.results.sunrise);
+                document.getElementById("sunrise").innerHTML =
+                "Sunrise today in Rancho Cucamonga is " +
+                sunriseTime.getHours() + ":" + sunriseTime.getMinutes() + ":" + sunriseTime.getSeconds();
+            });
+
+        </script>
+</body>
+
+</html>
