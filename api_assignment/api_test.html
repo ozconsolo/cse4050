@@ -7,17 +7,28 @@
 </head>
 
 <body>
-    <div id="sunrise"> </div>
+    <div id="titleSentence">
+            <p> This is the API assignment</p>
+    </div>
 
-        <p> This is the API assignment</p>
+    <div id="sunrise"></div>
+    <div id="sunset"></div>
 
         <script>
+            const sunriseSunsetUrl = "https://api.sunrise-sunset.org/json?lat=34.1064&lng=-117.5931&formatted=0";
 
-            fetch("https://api.sunrise-sunset.org/json?lat=34.1064&lng=-117.5931&formatted=0").then(response => response.json()).then(data => {
+            fetch(sunriseSunsetUrl).then(response => response.json()).then(data => {
                 const sunriseTime = new Date(data.results.sunrise);
                 document.getElementById("sunrise").innerHTML =
-                "Sunrise today in Rancho Cucamonga is " +
-                sunriseTime.getHours() + ":" + sunriseTime.getMinutes() + ":" + sunriseTime.getSeconds();
+                "Sunrise today in Rancho Cucamonga is at " +
+                sunriseTime.getHours() + ":" + sunriseTime.getMinutes() + ":" + sunriseTime.getSeconds() + " AM\n";
+            });
+
+            fetch(sunriseSunsetUrl).then(response => response.json()).then(data => {
+                const sunsetTime = new Date(data.results.sunset);
+                document.getElementById("sunset").innerHTML =
+                "Sunset will be at " +
+                (sunsetTime.getHours() - 12) + ":" + sunsetTime.getMinutes() + ":" + sunsetTime.getSeconds() + " PM";
             });
 
         </script>
