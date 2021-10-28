@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,10 +18,48 @@ h1, h2, h3, h4, h5, h6{
     background-color: #132C33;
 }
 
+.container-fluid{
+    padding: 3% 15%;
+}
+
 .title_car_pic{
     width: 60%;
 }
 
 .contact_us{
     color: white;
+}
+
+.search_bar{
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+
+.title_text_1{
+    font-weight: 900;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.title_text_2{
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.sign_up_text{
+    padding-left: 6rem;
+}
+
+.car_selection_text{
+    text-align: center;
+    font-weight: 600;
+}
+
+.testimonials{
+    text-align: center;
+}
+
+.contact_us{
+    text-align: center;
 }
