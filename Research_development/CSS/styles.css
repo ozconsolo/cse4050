@@ -1,3 +1,27 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
 #title{
-    background-color: #746c70;
+    background-color: #D8E3E7;
+}
+
+#car_selection_section{
+    background-color: #51C4D3;
+}
+
+#testimonial_section{
+    background-color: #126E82;
+}
+
+#contact_us_section{
+    background-color: #132C33;
+}
+
+.title_car_pic{
+    width: 60%;
+}
+
+.contact_us{
+    color: white;
 }
