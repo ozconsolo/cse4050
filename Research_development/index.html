@@ -7,6 +7,9 @@
 
     <title>Ozzy's Used Cars</title>
 
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/b8b68420fb.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
@@ -60,17 +63,20 @@
                             <label for="Search">Search:</label>
                             <input type="text">
                         </form>
-                        <a class="sign_up_text" href="">Sign up for an account</a>
+                        <a class="sign_up_text" href="">Sign up</a>
                     </div>
                 </div>
-
+            <div>
                 <div class="row">
-                    <div class="col-7">
-                        <h2 class="title_text_2">Great Cars at Great Prices!</h2>
-                    </div>
-                    <div class="col-5">
+                    <div class="col">
                         <!--Title Car Pic-->
                         <img class="title_car_pic" src="images/grey_mercedez_benz.png" alt="Grey Mercedez Benz">
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="title_text_2">Great Cars at Great Prices!</h2>
                     </div>
                 </div>
             </div>
@@ -82,6 +88,41 @@
         <div class="container-fluid">
            <div class="car_selection">
                 <h2 class="car_selection_text">Browse our wide selection of cars!</h2>
+
+                <!--Beginning of the cards-->
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="car_selection_pics" src="images/2018_Toyota_Corolla_(ZRE172R)_Ascent_sedan_(2018-11-02)_01.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Cars</h5>
+                              <p class="card-text">Come over and see our selection of cars</p>
+                              <a href="#" class="btn btn-primary">Browse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="car_selection_pics" src="images/2017 Toyota Tundra Platinum 003 720.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Trucks</h5>
+                              <p class="card-text">Come over and see our selection of trucks</p>
+                              <a href="#" class="btn btn-primary">Browse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="car_selection_pics" src="images/suv_pic.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">SUVS</h5>
+                              <p class="card-text">Come over and see our selection of SUVS</p>
+                              <a href="#" class="btn btn-primary">Browse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -90,8 +131,30 @@
     <section id="testimonial_section">
         <div class="container-fluid">
             <div class="testimonials">
-                <h2>This is what out past customers have had to say about us!</h2>
+                <h1 class="testimonial_text">Testimonials</h2>
             </div>
+            <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h2 class="testimonial_text_2">I went to Ozzy's Car Emporium and got the best car I have ever driven in my life!</h2>
+                    <img class="testimonial_pic" src="images/shutterstock_648907024.jpeg" alt="girl_pic">
+                    <em>Los Angeles, CA</em>
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="testimonial_text_2">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</h2>
+                      <img class="testimonial_pic" src="images/Pierre-Person.jpeg" alt="guy_pic">
+                      <em>San Bernardino, CA</em>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonials-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
     </section>
 
@@ -101,6 +164,11 @@
             <div class="contact_us">
                 <h3>Contact Us</h3>
             </div>
+            <i class="contact_us_icons fab fa-twitter"></i>
+            <i class="contact_us_icons fab fa-instagram"></i>
+            <i class="contact_us_icons fab fa-facebook-f"></i>
+            <i class="contact_us_icons fas fa-envelope"></i>
+            <p class="copyright_text">© Copyright 2021 Ozzy's Used Car Emporium</p>
         </div>
     </section>
   
