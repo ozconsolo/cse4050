@@ -116,3 +116,61 @@ h1{
 .contact_us_icons{
     margin: 20px 10px;
 }
+
+.contact_us_go_back{
+    margin-top: 3em;
+    padding-left: 2em;
+}
+
+.contact_us_form{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    line-break: auto;
+}
+
+#form_section{
+    background-color: #D8E3E7;
+}
+
+#contact_us_form_page_header{
+    color: #126E82;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.contact_title_text{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.form_section_title{
+    padding-top:1em;
+    text-align: center;
+}
+
+.form_labels_name{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.form_labels_email{
+    padding-bottom: 2em;
+}
+
+.inventory_title_text{
+    text-align: center;
+    color: #126E82;
+}
+
+.list-group-item{
+    text-align: center;
+}
+
+.inventory_car_text{
+    text-align: center;
+}
+.inventory_car_pic{
+    width: auto;
+    height: auto;
+}
